@@ -93,12 +93,12 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ProductFramework/CYFFmpeg.framework/Headers/**/*.{h}"
+  s.source_files  = "CYFFmpeg.framework/Headers/**/*.{h}"
   # s.exclude_files = "Classes/Exclude"
 
-  s.vendored_frameworks = 'ProductFramework/CYFFmpeg.framework'
+  s.vendored_frameworks = 'CYFFmpeg.framework'
 
-  s.public_header_files = "ProductFramework/CYFFmpeg.framework/Headers/CYFFmpeg.h"
+  s.public_header_files = "CYFFmpeg.framework/Headers/CYFFmpeg.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
