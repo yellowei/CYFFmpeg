@@ -1,2 +1,14 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+*.c linguist-language=Objective-C
+*.cpp linguist-language=Objective-C
+*.h linguist-language=Objective-C
+CYFFmpeg/x264-iOS/libx264.a filter=lfs diff=lfs merge=lfs -text
+CYFFmpeg/Smbclient/libsmbclient.a filter=lfs diff=lfs merge=lfs -text
+CYFFmpeg/fdk-aac-ios/libfdk-aac.a filter=lfs diff=lfs merge=lfs -text
+
+CYFFmpeg/libffmpeg/lib/libavcodec.a filter=lfs diff=lfs merge=lfs -text
+CYFFmpeg/libffmpeg/lib/libavformat.a filter=lfs diff=lfs merge=lfs -text
+CYFFmpeg/libffmpeg/lib/libswscale.a filter=lfs diff=lfs merge=lfs -text
+CYFFmpeg/libffmpeg/lib/libavutil.a filter=lfs diff=lfs merge=lfs -text
+CYFFmpeg/libffmpeg/lib/libavfilter.a filter=lfs diff=lfs merge=lfs -text
