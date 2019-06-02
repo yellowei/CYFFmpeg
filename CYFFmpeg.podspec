@@ -127,6 +127,9 @@ Pod::Spec.new do |s|
   # s.library   = "iconv"
   s.libraries = "iconv", "resolv", "bz2", "z"
 
+  s.user_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(inherited)" "${PODS_ROOT}/ProductFramework/CYFFmpeg.framework/Headers"' }
+  s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(inherited)" "${PODS_ROOT}/ProductFramework/CYFFmpeg.framework/Headers"' }
+  # s.pod_target_xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/CYPlayer/CYFrameworks"', 'ENABLE_BITCODE' => 'NO', 'OTHER_LDFLAGS' => '$(inherited) -read_only_relocs suppress '}
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
