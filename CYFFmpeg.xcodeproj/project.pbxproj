@@ -73,7 +73,6 @@
 		BC0CEADD22A3827F0006D011 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BC0CEADF22A382AB0006D011 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		BC0CEAE322A382EB0006D011 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
-		BC0CEAE522A383140006D011 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
 		BC0CEAE722A3834A0006D011 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		BC0CEAED22A38A540006D011 /* libFFmpegiOSCLT.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFFmpegiOSCLT.a; path = "CYFFmpeg/ffmpeg-tools/libFFmpegiOSCLT.a"; sourceTree = "<group>"; };
 		BC0CEE4322A3A6A90006D011 /* libpostproc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libpostproc; path = CYFFmpeg/libffmpeg/include/libpostproc; sourceTree = "<group>"; };
@@ -206,7 +205,6 @@
 				BC0CEE5922A3A70F0006D011 /* libfdk-aac.a */,
 				BC0CEAED22A38A540006D011 /* libFFmpegiOSCLT.a */,
 				BC0CEAE722A3834A0006D011 /* libresolv.tbd */,
-				BC0CEAE522A383140006D011 /* libresolv.9.tbd */,
 				BC0CEAE322A382EB0006D011 /* libbz2.tbd */,
 				BC0CEADF22A382AB0006D011 /* VideoToolbox.framework */,
 				BC0CEADD22A3827F0006D011 /* AudioToolbox.framework */,
