@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CYFFmpeg"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "CYFFmpeg, a framework for ffmpeg, include x264, fdk-aac, smbclient, and cmdutils for ffmpeg."
 
   # This description is used to generate tags and improve search results.
@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "CYFFmpeg.framework/Headers/**/*.{h}"
+  s.source_files  = "CYFFmpeg.framework/Headers/*.{h}"
   # s.exclude_files = "Classes/Exclude"
 
   s.vendored_frameworks = 'CYFFmpeg.framework'
@@ -147,6 +147,9 @@ Pod::Spec.new do |s|
       'ENABLE_BITCODE'           => 'NO'
   }
 
+  s.user_target_xcconfig = { 
+    'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
+  }
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
