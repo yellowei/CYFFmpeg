@@ -458,12 +458,6 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/XDXFFmpegDynamicLibProject/libffmpeg/lib",
-					"$(PROJECT_DIR)/XDXFFmpegDynamicLibProject/Smbclient/lib",
-					"$(PROJECT_DIR)/XDXFFmpegDynamicLibProject/fdk-aac-ios/lib",
-					"$(PROJECT_DIR)/XDXFFmpegDynamicLibProject/Smbclient",
-					"$(PROJECT_DIR)/XDXFFmpegDynamicLibProject/fdk-aac-ios",
-					"$(PROJECT_DIR)/XDXFFmpegDynamicLibProject/ffmpeg-tools",
 					"$(PROJECT_DIR)/CYFFmpeg/fdk-aac-ios",
 					"$(PROJECT_DIR)/CYFFmpeg/ffmpeg-tools",
 					"$(PROJECT_DIR)/CYFFmpeg/libffmpeg/lib",
@@ -505,12 +499,6 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/XDXFFmpegDynamicLibProject/libffmpeg/lib",
-					"$(PROJECT_DIR)/XDXFFmpegDynamicLibProject/Smbclient/lib",
-					"$(PROJECT_DIR)/XDXFFmpegDynamicLibProject/fdk-aac-ios/lib",
-					"$(PROJECT_DIR)/XDXFFmpegDynamicLibProject/Smbclient",
-					"$(PROJECT_DIR)/XDXFFmpegDynamicLibProject/fdk-aac-ios",
-					"$(PROJECT_DIR)/XDXFFmpegDynamicLibProject/ffmpeg-tools",
 					"$(PROJECT_DIR)/CYFFmpeg/fdk-aac-ios",
 					"$(PROJECT_DIR)/CYFFmpeg/ffmpeg-tools",
 					"$(PROJECT_DIR)/CYFFmpeg/libffmpeg/lib",
