@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CYFFmpeg"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "CYFFmpeg, a framework for ffmpeg, include x264, fdk-aac, smbclient, and cmdutils for ffmpeg."
 
   # This description is used to generate tags and improve search results.
@@ -134,17 +134,19 @@ Pod::Spec.new do |s|
   s.header_mappings_dir = "CYFFmpeg.framework/Headers/**"
 
   #将这些文件设置为private_file或public_file
-  s.private_header_files = "CYFFmpeg.framework/Headers/**/*.h"
+  # s.private_header_files = "CYFFmpeg.framework/Headers/**/*.h"
 
   
 
   #因为我的C头文件有嵌套，需要查找子目录，所以需要将non-recursive改为recursive ${PODS_ROOT}/Headers/Private/**
   #-undefined dynamic_lookup 这个表明了当主工程和framework都包含同一个库时，会优先使用主工程的库。
   s.pod_target_xcconfig = {
-      'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) ${PODS_ROOT}/Headers/Private/**',
+      'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) "${PODS_ROOT}/CYFFmpeg/**" ',
+      'HEADER_SEARCH_PATHS'      => '$(inherited) "${PODS_ROOT}/CYFFmpeg/CYFFmpeg.framework/Headers/**" ',
       'OTHER_LDFLAGS'            => '$(inherited) -undefined dynamic_lookup -ObjC',
       'ENABLE_BITCODE'           => 'NO'
   }
+
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -155,7 +157,8 @@ Pod::Spec.new do |s|
 
   # s.requires_arc = true
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  #往主工程里添加必要的路径
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => '${PODS_ROOT}/CYFFmpeg/CYFFmpeg.framework/Headers/**' }
   # s.dependency "JSONKit", "~> 1.4"
 
 end
