@@ -131,7 +131,7 @@ Pod::Spec.new do |s|
   # s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(inherited)" "${PODS_ROOT}/ProductFramework/CYFFmpeg.framework/Headers"' }
 
   #设置cfiles及子目录结构保持不变
-  s.header_mappings_dir = "CYFFmpeg.framework/Headers/**"
+  # s.header_mappings_dir = "CYFFmpeg.framework/Headers/**"
 
   #将这些文件设置为private_file或public_file
   # s.private_header_files = "CYFFmpeg.framework/Headers/**/*.h"
