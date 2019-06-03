@@ -46,7 +46,7 @@
  *
  * @section ffmpeg_versioning Versioning and compatibility
  *
- * Each of the FFmpeg libraries contains a version.h header, which defines a
+ * Each of the FFmpeg libraries contains a avutil_version.h header, which defines a
  * major, minor and micro version number with the
  * <em>LIBRARYNAME_VERSION_{MAJOR,MINOR,MICRO}</em> macros. The major version
  * number is incremented with backward incompatible changes - e.g. removing
@@ -296,7 +296,7 @@ char av_get_picture_type_char(enum AVPictureType pict_type);
 #include "common.h"
 #include "error.h"
 #include "rational.h"
-#include "version.h"
+#include "avutil_version.h"
 #include "macros.h"
 #include "mathematics.h"
 #include "log.h"

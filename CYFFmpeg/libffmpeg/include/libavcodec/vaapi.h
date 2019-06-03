@@ -31,8 +31,8 @@
  */
 
 #include <stdint.h>
-#include "libavutil/attributes.h"
-#include "version.h"
+#include "attributes.h"
+#include "avcodec_version.h"
 
 #if FF_API_STRUCT_VAAPI_CONTEXT
 

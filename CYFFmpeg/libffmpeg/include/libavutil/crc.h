@@ -30,7 +30,7 @@
 #include <stdint.h>
 #include <stddef.h>
 #include "attributes.h"
-#include "version.h"
+#include "avutil_version.h"
 
 /**
  * @defgroup lavu_crc32 CRC

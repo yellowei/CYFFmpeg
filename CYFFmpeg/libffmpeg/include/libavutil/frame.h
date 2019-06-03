@@ -34,7 +34,7 @@
 #include "rational.h"
 #include "samplefmt.h"
 #include "pixfmt.h"
-#include "version.h"
+#include "avutil_version.h"
 
 
 /**

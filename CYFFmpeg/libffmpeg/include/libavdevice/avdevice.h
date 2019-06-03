@@ -19,7 +19,7 @@
 #ifndef AVDEVICE_AVDEVICE_H
 #define AVDEVICE_AVDEVICE_H
 
-#include "version.h"
+#include "avdevice_version.h"
 
 /**
  * @file
@@ -45,10 +45,10 @@
  * @{
  */
 
-#include "libavutil/log.h"
-#include "libavutil/opt.h"
-#include "libavutil/dict.h"
-#include "libavformat/avformat.h"
+#include "log.h"
+#include "opt.h"
+#include "dict.h"
+#include "avformat.h"
 
 /**
  * Return the LIBAVDEVICE_VERSION_INT constant.

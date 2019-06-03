@@ -23,7 +23,7 @@
 
 #include <stdint.h>
 
-#include "version.h"
+#include "avutil_version.h"
 /**
  * @defgroup lavu_hmac HMAC
  * @ingroup lavu_crypto

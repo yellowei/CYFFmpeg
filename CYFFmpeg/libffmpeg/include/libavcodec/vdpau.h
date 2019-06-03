@@ -51,11 +51,11 @@
 
 #include <vdpau/vdpau.h>
 
-#include "libavutil/avconfig.h"
-#include "libavutil/attributes.h"
+#include "avconfig.h"
+#include "attributes.h"
 
 #include "avcodec.h"
-#include "version.h"
+#include "avcodec_version.h"
 
 #if FF_API_BUFS_VDPAU
 union AVVDPAUPictureInfo {

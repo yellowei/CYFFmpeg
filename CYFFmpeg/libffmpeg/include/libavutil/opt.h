@@ -33,7 +33,7 @@
 #include "log.h"
 #include "pixfmt.h"
 #include "samplefmt.h"
-#include "version.h"
+#include "avutil_version.h"
 
 /**
  * @defgroup avoptions AVOptions

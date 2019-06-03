@@ -31,23 +31,23 @@
 
 #include "cmdutils.h"
 
-#include "libavformat/avformat.h"
-#include "libavformat/avio.h"
+#include "avformat.h"
+#include "avio.h"
 
-#include "libavcodec/avcodec.h"
+#include "avcodec.h"
 
-#include "libavfilter/avfilter.h"
+#include "avfilter.h"
 
-#include "libavutil/avutil.h"
-#include "libavutil/dict.h"
-#include "libavutil/eval.h"
-#include "libavutil/fifo.h"
-#include "libavutil/hwcontext.h"
-#include "libavutil/pixfmt.h"
-#include "libavutil/rational.h"
-#include "libavutil/threadmessage.h"
+#include "avutil.h"
+#include "dict.h"
+#include "eval.h"
+#include "fifo.h"
+#include "hwcontext.h"
+#include "pixfmt.h"
+#include "rational.h"
+#include "threadmessage.h"
 
-#include "libswresample/swresample.h"
+#include "swresample.h"
 
 #define VSYNC_AUTO       -1
 #define VSYNC_PASSTHROUGH 0

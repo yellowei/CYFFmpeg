@@ -29,8 +29,8 @@
 
 #include <X11/extensions/XvMC.h>
 
-#include "libavutil/attributes.h"
-#include "version.h"
+#include "attributes.h"
+#include "avcodec_version.h"
 #include "avcodec.h"
 
 /**
