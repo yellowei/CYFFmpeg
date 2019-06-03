@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CYFFmpeg"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "CYFFmpeg, a framework for ffmpeg, include x264, fdk-aac, smbclient, and cmdutils for ffmpeg."
 
   # This description is used to generate tags and improve search results.
@@ -129,7 +129,23 @@ Pod::Spec.new do |s|
 
   # s.user_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(inherited)" "${PODS_ROOT}/ProductFramework/CYFFmpeg.framework/Headers"' }
   # s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(inherited)" "${PODS_ROOT}/ProductFramework/CYFFmpeg.framework/Headers"' }
-  # s.pod_target_xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/CYPlayer/CYFrameworks"', 'ENABLE_BITCODE' => 'NO', 'OTHER_LDFLAGS' => '$(inherited) -read_only_relocs suppress '}
+
+  #设置cfiles及子目录结构保持不变
+  s.header_mappings_dir = "CYFFmpeg.framework/Headers/**"
+
+  #将这些文件设置为private_file或public_file
+  s.private_header_files = "CYFFmpeg.framework/Headers/**/*.h"
+
+  
+
+  #因为我的C头文件有嵌套，需要查找子目录，所以需要将non-recursive改为recursive ${PODS_ROOT}/Headers/Private/**
+  #-undefined dynamic_lookup 这个表明了当主工程和framework都包含同一个库时，会优先使用主工程的库。
+  s.pod_target_xcconfig = {
+      'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) ${PODS_ROOT}/Headers/Private/**',
+      'OTHER_LDFLAGS'            => '$(inherited) -undefined dynamic_lookup -ObjC',
+      'ENABLE_BITCODE'           => 'NO'
+  }
+
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
