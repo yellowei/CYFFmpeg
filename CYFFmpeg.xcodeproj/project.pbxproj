@@ -34,17 +34,9 @@
 		BC0CEE6822A3A73E0006D011 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0CEE6022A3A73A0006D011 /* libavformat.a */; };
 		BC0CEE6922A3A73E0006D011 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0CEE6122A3A73C0006D011 /* libswresample.a */; };
 		BC0CEE6A22A3A73E0006D011 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0CEE6222A3A73E0006D011 /* libswscale.a */; };
-		BC0CEE7022A3A74F0006D011 /* libtevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0CEE6B22A3A7490006D011 /* libtevent.a */; };
-		BC0CEE7122A3A74F0006D011 /* libtdb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0CEE6C22A3A74B0006D011 /* libtdb.a */; };
-		BC0CEE7222A3A74F0006D011 /* libwbclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0CEE6D22A3A74B0006D011 /* libwbclient.a */; };
-		BC0CEE7322A3A74F0006D011 /* libsmbclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0CEE6E22A3A74D0006D011 /* libsmbclient.a */; };
-		BC0CEE7422A3A74F0006D011 /* libtalloc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0CEE6F22A3A74E0006D011 /* libtalloc.a */; };
 		BC0CEE7C22A3B50D0006D011 /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0CEE7B22A3B50D0006D011 /* libx264.a */; };
 		BC3993F922A5733000F67A2F /* x264_config.h in Headers */ = {isa = PBXBuildFile; fileRef = BC3993F722A5732F00F67A2F /* x264_config.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC3993FA22A5733000F67A2F /* x264.h in Headers */ = {isa = PBXBuildFile; fileRef = BC3993F822A5733000F67A2F /* x264.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC3993FE22A5733900F67A2F /* libsmbclient.h in Headers */ = {isa = PBXBuildFile; fileRef = BC3993FB22A5733900F67A2F /* libsmbclient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC3993FF22A5733900F67A2F /* talloc_stack.h in Headers */ = {isa = PBXBuildFile; fileRef = BC3993FC22A5733900F67A2F /* talloc_stack.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC39940022A5733900F67A2F /* talloc.h in Headers */ = {isa = PBXBuildFile; fileRef = BC3993FD22A5733900F67A2F /* talloc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC39940622A5734300F67A2F /* aacdecoder_lib.h in Headers */ = {isa = PBXBuildFile; fileRef = BC39940122A5734300F67A2F /* aacdecoder_lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC39940722A5734300F67A2F /* aacenc_lib.h in Headers */ = {isa = PBXBuildFile; fileRef = BC39940222A5734300F67A2F /* aacenc_lib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC39940822A5734300F67A2F /* machine_type.h in Headers */ = {isa = PBXBuildFile; fileRef = BC39940322A5734300F67A2F /* machine_type.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -196,17 +188,9 @@
 		BC0CEE6022A3A73A0006D011 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = CYFFmpeg/libffmpeg/lib/libavformat.a; sourceTree = "<group>"; };
 		BC0CEE6122A3A73C0006D011 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswresample.a; path = CYFFmpeg/libffmpeg/lib/libswresample.a; sourceTree = "<group>"; };
 		BC0CEE6222A3A73E0006D011 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libswscale.a; path = CYFFmpeg/libffmpeg/lib/libswscale.a; sourceTree = "<group>"; };
-		BC0CEE6B22A3A7490006D011 /* libtevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtevent.a; path = CYFFmpeg/Smbclient/libtevent.a; sourceTree = "<group>"; };
-		BC0CEE6C22A3A74B0006D011 /* libtdb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtdb.a; path = CYFFmpeg/Smbclient/libtdb.a; sourceTree = "<group>"; };
-		BC0CEE6D22A3A74B0006D011 /* libwbclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwbclient.a; path = CYFFmpeg/Smbclient/libwbclient.a; sourceTree = "<group>"; };
-		BC0CEE6E22A3A74D0006D011 /* libsmbclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsmbclient.a; path = CYFFmpeg/Smbclient/libsmbclient.a; sourceTree = "<group>"; };
-		BC0CEE6F22A3A74E0006D011 /* libtalloc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtalloc.a; path = CYFFmpeg/Smbclient/libtalloc.a; sourceTree = "<group>"; };
 		BC0CEE7B22A3B50D0006D011 /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libx264.a; path = "CYFFmpeg/x264-iOS/libx264.a"; sourceTree = "<group>"; };
 		BC3993F722A5732F00F67A2F /* x264_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = x264_config.h; path = "CYFFmpeg/x264-iOS/libx264/x264_config.h"; sourceTree = "<group>"; };
 		BC3993F822A5733000F67A2F /* x264.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = x264.h; path = "CYFFmpeg/x264-iOS/libx264/x264.h"; sourceTree = "<group>"; };
-		BC3993FB22A5733900F67A2F /* libsmbclient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = libsmbclient.h; path = CYFFmpeg/Smbclient/libsmbclient/libsmbclient.h; sourceTree = "<group>"; };
-		BC3993FC22A5733900F67A2F /* talloc_stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = talloc_stack.h; path = CYFFmpeg/Smbclient/libsmbclient/talloc_stack.h; sourceTree = "<group>"; };
-		BC3993FD22A5733900F67A2F /* talloc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = talloc.h; path = CYFFmpeg/Smbclient/libsmbclient/talloc.h; sourceTree = "<group>"; };
 		BC39940122A5734300F67A2F /* aacdecoder_lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = aacdecoder_lib.h; path = "CYFFmpeg/fdk-aac-ios/libfdkaac/aacdecoder_lib.h"; sourceTree = "<group>"; };
 		BC39940222A5734300F67A2F /* aacenc_lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = aacenc_lib.h; path = "CYFFmpeg/fdk-aac-ios/libfdkaac/aacenc_lib.h"; sourceTree = "<group>"; };
 		BC39940322A5734300F67A2F /* machine_type.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = machine_type.h; path = "CYFFmpeg/fdk-aac-ios/libfdkaac/machine_type.h"; sourceTree = "<group>"; };
@@ -334,11 +318,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC0CEE7C22A3B50D0006D011 /* libx264.a in Frameworks */,
-				BC0CEE7022A3A74F0006D011 /* libtevent.a in Frameworks */,
-				BC0CEE7122A3A74F0006D011 /* libtdb.a in Frameworks */,
-				BC0CEE7222A3A74F0006D011 /* libwbclient.a in Frameworks */,
-				BC0CEE7322A3A74F0006D011 /* libsmbclient.a in Frameworks */,
-				BC0CEE7422A3A74F0006D011 /* libtalloc.a in Frameworks */,
 				BC0CEE6322A3A73E0006D011 /* libavdevice.a in Frameworks */,
 				BC0CEE6422A3A73E0006D011 /* libavutil.a in Frameworks */,
 				BC0CEE6522A3A73E0006D011 /* libpostproc.a in Frameworks */,
@@ -493,9 +472,6 @@
 				BC39940522A5734300F67A2F /* FDK_audio.h */,
 				BC39940422A5734300F67A2F /* genericStds.h */,
 				BC39940322A5734300F67A2F /* machine_type.h */,
-				BC3993FB22A5733900F67A2F /* libsmbclient.h */,
-				BC3993FC22A5733900F67A2F /* talloc_stack.h */,
-				BC3993FD22A5733900F67A2F /* talloc.h */,
 				BC3993F722A5732F00F67A2F /* x264_config.h */,
 				BC3993F822A5733000F67A2F /* x264.h */,
 				237390DB22420B4900A650BF /* CYFFmpeg */,
@@ -525,11 +501,6 @@
 			isa = PBXGroup;
 			children = (
 				BC0CEE7B22A3B50D0006D011 /* libx264.a */,
-				BC0CEE6E22A3A74D0006D011 /* libsmbclient.a */,
-				BC0CEE6F22A3A74E0006D011 /* libtalloc.a */,
-				BC0CEE6C22A3A74B0006D011 /* libtdb.a */,
-				BC0CEE6B22A3A7490006D011 /* libtevent.a */,
-				BC0CEE6D22A3A74B0006D011 /* libwbclient.a */,
 				BC0CEE5F22A3A7380006D011 /* libavcodec.a */,
 				BC0CEE5B22A3A7350006D011 /* libavdevice.a */,
 				BC0CEE5E22A3A7370006D011 /* libavfilter.a */,
@@ -570,9 +541,6 @@
 				237390DE22420B4900A650BF /* CYFFmpeg.h in Headers */,
 				BC3993F922A5733000F67A2F /* x264_config.h in Headers */,
 				BC3993FA22A5733000F67A2F /* x264.h in Headers */,
-				BC3993FE22A5733900F67A2F /* libsmbclient.h in Headers */,
-				BC3993FF22A5733900F67A2F /* talloc_stack.h in Headers */,
-				BC39940022A5733900F67A2F /* talloc.h in Headers */,
 				BC39940622A5734300F67A2F /* aacdecoder_lib.h in Headers */,
 				BC39940722A5734300F67A2F /* aacenc_lib.h in Headers */,
 				BC39941322A5774500F67A2F /* swresample.h in Headers */,
