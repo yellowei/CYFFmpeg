@@ -41,3 +41,6 @@ FOUNDATION_EXPORT const unsigned char XDXFFmpegDynamicLibProjectVersionString[];
 #import "imgutils.h"
 #import "x264.h"
 #import "libsmbclient.h"
+#import "talloc_stack.h"
+#import "url.h"
+#import "attributes.h"
