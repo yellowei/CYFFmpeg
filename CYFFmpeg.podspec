@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CYFFmpeg"
-  s.version      = "0.2.1"
+  s.version      = "0.2.2"
   s.summary      = "CYFFmpeg, a framework for ffmpeg, include x264, fdk-aac, smbclient, and cmdutils for ffmpeg."
 
   # This description is used to generate tags and improve search results.
