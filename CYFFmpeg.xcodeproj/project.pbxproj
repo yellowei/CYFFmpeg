@@ -40,6 +40,7 @@
 		BC0CEE7322A3A74F0006D011 /* libsmbclient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0CEE6E22A3A74D0006D011 /* libsmbclient.a */; };
 		BC0CEE7422A3A74F0006D011 /* libtalloc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0CEE6F22A3A74E0006D011 /* libtalloc.a */; };
 		BC0CEE7C22A3B50D0006D011 /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0CEE7B22A3B50D0006D011 /* libx264.a */; };
+		BC1558CC2A51178000EBAD64 /* CYFFmpeg.podspec in Resources */ = {isa = PBXBuildFile; fileRef = BC1558CB2A51178000EBAD64 /* CYFFmpeg.podspec */; };
 		BC2D7ED724F9159300B8A55A /* url.h in Headers */ = {isa = PBXBuildFile; fileRef = BC2D7ED624F9159300B8A55A /* url.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC3993F922A5733000F67A2F /* x264_config.h in Headers */ = {isa = PBXBuildFile; fileRef = BC3993F722A5732F00F67A2F /* x264_config.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC3993FA22A5733000F67A2F /* x264.h in Headers */ = {isa = PBXBuildFile; fileRef = BC3993F822A5733000F67A2F /* x264.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -205,6 +206,7 @@
 		BC0CEE6E22A3A74D0006D011 /* libsmbclient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsmbclient.a; path = CYFFmpeg/Smbclient/libsmbclient.a; sourceTree = "<group>"; };
 		BC0CEE6F22A3A74E0006D011 /* libtalloc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtalloc.a; path = CYFFmpeg/Smbclient/libtalloc.a; sourceTree = "<group>"; };
 		BC0CEE7B22A3B50D0006D011 /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libx264.a; path = "CYFFmpeg/x264-iOS/libx264.a"; sourceTree = "<group>"; };
+		BC1558CB2A51178000EBAD64 /* CYFFmpeg.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CYFFmpeg.podspec; sourceTree = "<group>"; };
 		BC2D7ED624F9159300B8A55A /* url.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = url.h; path = CYFFmpeg/libffmpeg/include/libavformat/url.h; sourceTree = "<group>"; };
 		BC3993F722A5732F00F67A2F /* x264_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = x264_config.h; path = "CYFFmpeg/x264-iOS/libx264/x264_config.h"; sourceTree = "<group>"; };
 		BC3993F822A5733000F67A2F /* x264.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = x264.h; path = "CYFFmpeg/x264-iOS/libx264/x264.h"; sourceTree = "<group>"; };
@@ -384,6 +386,7 @@
 		237390CF22420B4900A650BF = {
 			isa = PBXGroup;
 			children = (
+				BC1558CB2A51178000EBAD64 /* CYFFmpeg.podspec */,
 				BC50CA5F2A092EF4002614A4 /* sources */,
 				237390DB22420B4900A650BF /* CYFFmpeg */,
 				2373923C2242224900A650BF /* Frameworks */,
@@ -776,6 +779,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1558CC2A51178000EBAD64 /* CYFFmpeg.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

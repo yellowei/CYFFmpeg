@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CYFFmpeg"
-  s.version      = "0.3.3"
-  s.summary      = "CYFFmpeg, a framework for ffmpeg, include x264, fdk-aac, smbclient, and cmdutils for ffmpeg."
+  s.version      = "1.0.0"
+  s.summary      = "CYFFmpeg, a framework for ffmpeg that baseed on version is 3.4, include x264, fdk-aac, smbclient, and cmdutils for ffmpeg."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,9 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                    CYFFmpeg
-                    a framework for ffmpeg,
-                    include x264, fdk-aac, smbclient, and cmdutils for ffmpeg.
+                   CYFFmpeg, 
+                   a framework for ffmpeg that baseed on version is 3.4, 
+                   include x264, fdk-aac, smbclient, and cmdutils for ffmpeg.
                    DESC
 
   s.homepage     = "https://github.com/yellowei/CYFFmpeg"
@@ -67,7 +67,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "11.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -141,11 +141,11 @@ Pod::Spec.new do |s|
   #因为我的C头文件有嵌套，需要查找子目录，所以需要将non-recursive改为recursive ${PODS_ROOT}/Headers/Private/**
   #-undefined dynamic_lookup 这个表明了当主工程和framework都包含同一个库时，会优先使用主工程的库。
   s.pod_target_xcconfig = {
-  	  'VALID_ARCHS' => 'arm64 armv7 x86_64',
+  	  'VALID_ARCHS' => 'arm64 x86_64',
       'FRAMEWORK_SEARCH_PATHS'	=> '$(inherited) "${PODS_ROOT}/CYFFmpeg/**" ',
       'HEADER_SEARCH_PATHS'    	=> '$(inherited) "${PODS_ROOT}/CYFFmpeg/CYFFmpeg.framework/Headers/**" ',
       'OTHER_LDFLAGS'           => '$(inherited) -ObjC',
-      'ENABLE_BITCODE'          => 'YES'
+      'ENABLE_BITCODE'          => 'NO'
   }
 
   # s.user_target_xcconfig = { 

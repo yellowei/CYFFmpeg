@@ -5,20 +5,42 @@
 [![stars](https://img.shields.io/github/stars/yellowei/CYFFmpeg)](https://github.com/yellowei/CYFFmpeg/star)
 [![license](https://img.shields.io/github/license/yellowei/CYFFmpeg)](https://github.com/yellowei/CYFFmpeg/blob/master/LICENSE)
 
-
 # CYFFmpeg
+
 
 用于ios的ffmpeg动态库
 
-实际上0.3.1版本开始，集成ffmpeg、x264、fdk-acc、ffmpeg-cmdctl、sambclient（samba）、openssl于一体
+基于ffmpeg3.4版本构建
 
-和程序员本身一样，都在默默地发光！
+集成ffmpeg、x264、fdk-acc、ffmpeg-cmdctl、sambclient（samba）、openssl于一体
 
-## 通过cocoapods安装ffmpeg动态库到项目
+
+
+## 前言
+
+之前的代码仓库直接删了，因为不想使用LFS了
+
+当时为了支持armv7和armv7s架构，有的静态库超过了100MB，必须存放GLFS
+
+要想缩小已使用GLFS仓库的存储使用量，github官方给的建议是直接删库
+
+借此契机，索性引入目前最新的xcode14进行开发，取消对armv7、armv7s的支持，并关闭Bitcode
+
+版本号将从1.0.0开始，不继续沿用0.3.3
+
+后续对ffmpeg的支持也会逐步更新
+
+
+
+## 安装方法
+
+通过cocoapods安装ffmpeg动态库到项目
 
 ```
 pod 'CYFFmpeg'
 ```
+
+
 
 ## 基本特性
 
@@ -68,12 +90,15 @@ dispatch_semaphore_signal([CYGCDManager sharedManager].av_read_frame_lock);
 
 - [x] 支持x86_64模拟器、armv7/arm64真机运行；
 
-- [x] Enable Bitcode=YES；
+- [ ] Enable Bitcode=YES；
+
+  > Xcode14放弃了从Xcode7引入的该特性
 
 - [x] 开箱即用。
 
 
-## 简单的代码
+
+## 示例
 
 * samba库相关函数的使用
 
@@ -147,6 +172,7 @@ int ret;
 ```
 
 * OpenSSL、Fdk-aac的使用请参考网上文章，这里不再一一举例
+
 
 
 ## 相关阅读
