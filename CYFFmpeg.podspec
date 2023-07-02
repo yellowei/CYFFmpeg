@@ -165,4 +165,10 @@ Pod::Spec.new do |s|
   s.xcconfig = {"HEADER_SEARCH_PATHS" => '${PODS_ROOT}/CYFFmpeg/CYFFmpeg.framework/Headers/**'}
   # s.dependency "JSONKit", "~> 1.4"
 
+  # M1的mac上模拟器也支持arm64，
+  # 所以xcode12+的版本在为模拟器build时会加入arm64的支持，
+  # 但intel的mac上此操作会导致构建失败，比较intel的mac上的模拟器仅x86_64
+  s.pod_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+  s.user_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+
 end
